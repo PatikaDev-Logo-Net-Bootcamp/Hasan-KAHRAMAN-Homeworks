@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model UserViewModel
+@{
+
+}
+<!-- Used to show all validation errors as a list in top of the page-->
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+<form id = "myform" method = "post">
+
+    <div>
+        @Html.LabelFor(x=> x.FirstName)
+        <p>@Html.EditorFor(x=> x.FirstName, new {@class = "form-control"})
+          <!--<span asp-validation-for="FirstName" class="text-danger"></span>-->
+         <!--@Html.ValidationMessageFor(x=> x.FirstName)-->
+        </p>
+       
+    </div>
+         
+    <div>
+        @Html.LabelFor(x=> x.LastName)
+        <p>@Html.EditorFor(x=> x.LastName)
+            <!--<span asp-validation-for="LastName" class="text-danger"></span>-->
+            <!--@Html.ValidationMessageFor(x=> x.LastName)-->
+        </p>
+        
+    </div>
+
+    <div>
+        @Html.LabelFor(x=> x.Email)
+        <p>@Html.EditorFor(x=> x.Email)
+             <!--<span asp-validation-for="Email" class="text-danger"></span>-->
+             <!--@Html.ValidationMessageFor(x=> x.Email)-->
+        </p>
+        
+    </div>
+
+    <div>
+        @Html.LabelFor(x=> x.Password)
+        <p>@Html.PasswordFor(x=> x.Password)
+             <!--<span asp-validation-for="Password" class="text-danger"></span>-->
+             <!--@Html.ValidationMessageFor(x=> x.Password)-->
+        </p>
+        
+    </div>
+
+    <input type="submit" value="Submit" />
+   
+</form>
+
+
+
+
