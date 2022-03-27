@@ -32,3 +32,10 @@ Swagger headerına app-version default key eklenecek. (IOperationFilter interfac
 Swagger 4 endpoint oluşturulacak istediğiniz gibi olabilir. Sadece bir tanesi gösterilmeyecek.
 Microsoft version classı ile version karşılaştırması yapabilirsiniz.
 Middleware ve IOC hakkında 2 dakikalık okunacak, ingilizcesi iyi olanlar ingilizce yazacaklar, yetersiz olanlar ise türkçe makale yayımlayacaklar. Linkedin ve Medium yayınlanacak. Yayınlamadan önce telegram grubunda paylaşın ve birbirinize geri dönüş yapınız.
+
+
+3. Hafta Ödevi - Homework3
+
+Homework three
+
+MSSQL de LogoDb adında 1 database oluşturulacak. Bu databasede 2 tane tablo oluşturulacak Company ve User. Kolonların sayılarını kendileri belirleyebilirler ama mutlaka Id alanı Primary Key olmalı ve bir User'in sadece 1 Company'si olmalıdır. FK ile tablolalar birbirine bağlanılmasını bekliyorum. Bu tablolara insert işlemi yapan Stored Procedure yazılacak. Bu işlemler Script dosyası olarak iletilecekler
