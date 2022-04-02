@@ -11,16 +11,11 @@ namespace First.App.DataAccess.EntityFramework
 
         }
         public DbSet<Company> Companies { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Post> Posts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new CompanyConfiguration());
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new PostConfiguration());
         }
-
     }
 }
