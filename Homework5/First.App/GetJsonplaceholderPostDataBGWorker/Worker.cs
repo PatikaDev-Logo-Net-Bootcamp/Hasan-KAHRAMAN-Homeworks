@@ -1,5 +1,6 @@
 using First.App.Business.Abstract;
 using First.App.Domain.Entities;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
@@ -14,12 +15,14 @@ namespace GetJsonplaceholderPostDataBGWorker
     {
         private readonly ILogger<Worker> _logger;
         private HttpClient httpClient;
-        private readonly IPostService _postService;
+        //private readonly IPostService _postService;
+        private readonly IServiceScopeFactory _service;
 
-        public Worker(ILogger<Worker> logger, IPostService postService)
+        public Worker(ILogger<Worker> logger, IServiceScopeFactory service)
         {
             _logger = logger;
-            _postService = postService;
+            //_postService = postService;
+            _service = service;
         }
 
         public override Task StartAsync(CancellationToken cancellationToken)
@@ -51,7 +54,11 @@ namespace GetJsonplaceholderPostDataBGWorker
                     
                     var posts = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Post>>(response);
 
-                    _postService.AddPosts(posts);
+                    using (var scope = _service.CreateScope())
+                    {
+                        var myScopedService = scope.ServiceProvider.GetRequiredService<IPostService>();
+                        myScopedService.AddPosts(posts);
+                    }
                     
                 }
                 else

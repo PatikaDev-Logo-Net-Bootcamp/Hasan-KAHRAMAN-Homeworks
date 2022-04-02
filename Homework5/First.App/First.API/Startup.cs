@@ -1,4 +1,3 @@
-
 using First.API.Filters;
 using First.App.Business.Abstract;
 using First.App.Business.Concretes;
@@ -53,8 +52,8 @@ namespace First.API
                     IssuerSigningKey = new SymmetricSecurityKey(Key),
                 };
             });
-
             services.AddSingleton<IJwtService, JwtService>();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "First.API", Version = "v1" });
@@ -92,7 +91,7 @@ namespace First.API
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<ICompanyService, CompanyService>();
-            services.AddTransient<IPostService, PostService>();
+            services.AddScoped<IPostService, PostService>();
 
 
             //Diðer filtre türleri gibi, action filtresi de farklý kapsam seviyelerine eklenebilir: Global, Action, Controller.

@@ -17,7 +17,6 @@ namespace GetJsonplaceholderPostDataBGWorker
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
-                    //services.AddSingleton<IPostService, PostService>();
                 });
     }
 }
