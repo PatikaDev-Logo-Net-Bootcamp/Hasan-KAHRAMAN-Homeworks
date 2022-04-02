@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace First.App.DataAccess.EntityFramework.Configurations
 {
-    public class PostConfiguration
+    public class PostConfiguration : IEntityTypeConfiguration<Post>
     {
         public void Configure(EntityTypeBuilder<Post> builder)
         {

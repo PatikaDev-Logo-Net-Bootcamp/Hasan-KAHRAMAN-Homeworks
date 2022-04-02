@@ -17,6 +17,8 @@ namespace First.App.DataAccess.EntityFramework
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new CompanyConfiguration());
+            modelBuilder.ApplyConfiguration(new PostConfiguration());
+
         }
     }
 }

@@ -17,15 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First.App.DataAccess.Entity
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First.App.Domain", "First.App.Domain\First.App.Domain.csproj", "{9FA49746-4649-4FA4-ADA5-680ECC7DF48D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSiteStatusCheck", "WebSiteStatusCheck\WebSiteStatusCheck.csproj", "{6EBA217E-7889-4171-A322-AE8A1F2521DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSiteStatusCheck", "WebSiteStatusCheck\WebSiteStatusCheck.csproj", "{6EBA217E-7889-4171-A322-AE8A1F2521DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundQueue.API", "BackgroundQueue.API\BackgroundQueue.API.csproj", "{5FEEBDBF-1167-4411-82D0-EA1B1F66E9AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackgroundQueue.API", "BackgroundQueue.API\BackgroundQueue.API.csproj", "{5FEEBDBF-1167-4411-82D0-EA1B1F66E9AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitSample", "XUnitSample\XUnitSample.csproj", "{2C498C98-483F-475A-9A6D-46FF195BE27A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitSample", "XUnitSample\XUnitSample.csproj", "{2C498C98-483F-475A-9A6D-46FF195BE27A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorUnitTest", "CalculatorUnitTest\CalculatorUnitTest.csproj", "{7D677AB7-6121-4825-9A2E-F023C44BCD16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorUnitTest", "CalculatorUnitTest\CalculatorUnitTest.csproj", "{7D677AB7-6121-4825-9A2E-F023C44BCD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First.App.Tests", "First.App.Tests\First.App.Tests.csproj", "{8281DC81-0C0B-4B0C-A826-49322A0ED2FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First.App.Tests", "First.App.Tests\First.App.Tests.csproj", "{8281DC81-0C0B-4B0C-A826-49322A0ED2FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetJsonplaceholderPostDataBGWorker", "GetJsonplaceholderPostDataBGWorker\GetJsonplaceholderPostDataBGWorker.csproj", "{286234C0-3EB0-451A-B8EC-B3F84423A49D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{8281DC81-0C0B-4B0C-A826-49322A0ED2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8281DC81-0C0B-4B0C-A826-49322A0ED2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8281DC81-0C0B-4B0C-A826-49322A0ED2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286234C0-3EB0-451A-B8EC-B3F84423A49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286234C0-3EB0-451A-B8EC-B3F84423A49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286234C0-3EB0-451A-B8EC-B3F84423A49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286234C0-3EB0-451A-B8EC-B3F84423A49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
