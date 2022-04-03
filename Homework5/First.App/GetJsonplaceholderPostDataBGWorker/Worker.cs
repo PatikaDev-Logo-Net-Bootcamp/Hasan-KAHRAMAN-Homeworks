@@ -65,7 +65,7 @@ namespace GetJsonplaceholderPostDataBGWorker
                 {
                     _logger.LogError("Error while getting data from jsonplaceholder.typicode.com/posts");
                 } 
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(60000, stoppingToken);
                 
             }
         }
